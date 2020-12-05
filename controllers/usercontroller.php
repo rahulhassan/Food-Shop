@@ -79,8 +79,7 @@
 			}else{
 				$invalid = "Invalind username or password";
 			}
-
-		 }
+		}
 	}
 
 
@@ -98,6 +97,4 @@
 		if (count($result)>0) return true;
 		return false;
 	}
-
-
 ?>

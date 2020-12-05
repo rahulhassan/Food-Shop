@@ -3,7 +3,6 @@
    
     $hasError = false;
     if(isset($_POST["add_product"])){
-        
         if(!$hasError){
             $fileType = strtolower(pathinfo(basename($_FILES["image"]["name"]),PATHINFO_EXTENSION));
             $file = "../storage/product_image/".uniqid().".$fileType";
@@ -11,8 +10,6 @@
             addProduct($_POST["name"],$_POST["price"],$_POST["qty"],$_POST["desc"],$file,$_POST["category_id"]);
             header("Location: ../views/allproducts.php");
         }
-       
-
     }
     
     function addProduct($name, $price, $qty, $desc, $image, $c_id){

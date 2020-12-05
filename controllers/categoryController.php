@@ -19,7 +19,6 @@
     function addCategory($cname){
         $query="INSERT INTO categories VALUES(null,'$cname')";
         execute ($query);
-       
     }
     
     function getAllCategories(){
